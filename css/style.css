@@ -55,11 +55,15 @@ p {
 
 .scoreBoard {
     width: 250px;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 4px;
     text-align: center;
     display: flex;
     gap: 10px;
+}
+
+span {
+    color: white;
 }
 
 .badge {
