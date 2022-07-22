@@ -24,15 +24,14 @@ function option3(){
 }
 
 function game(playerSelection) {
+    let computerSelection = computerPlay();
+        result_div.innerHTML = (playRound(playerSelection, computerSelection));
     if (userScore == 5 || computerScore == 5) {
         scores();
         userScore = 0;
         computerScore = 0;
         playerScore_Span.innerHTML = userScore;
         ComputerScore_Span.innerHTML = computerScore;
-    } else {
-        let computerSelection = computerPlay();
-        result_div.innerHTML = (playRound(playerSelection, computerSelection));
     }
 }
 
