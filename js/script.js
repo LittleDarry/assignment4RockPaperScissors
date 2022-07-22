@@ -25,7 +25,7 @@ function option3(){
 
 function game(playerSelection) {
     let computerSelection = computerPlay();
-        result_div.innerHTML = (playRound(playerSelection, computerSelection));
+    result_div.innerHTML = (playRound(playerSelection, computerSelection));
     if (userScore == 5 || computerScore == 5) {
         scores();
         userScore = 0;
